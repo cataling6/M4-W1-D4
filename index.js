@@ -13,9 +13,9 @@ const fetchSongs = () => {
       console.log("dica");
       const riga = document.querySelector(".row");
 
-      for (let song of canzoni) {
+      for (let song of canzoni.data) {
         riga.innerHTML = `<div class="card" id="card-${song}">
-        <img src="" class="card-img-top" alt="...">
+        <img src="${song.album.cover}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${song.title}</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
