@@ -1,4 +1,5 @@
 //const eminem = "https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem
+let modal = document.querySelector("#contentList");
 let coverEminem = [];
 let titleEminem = [];
 let coverMetallica = [];
@@ -104,17 +105,13 @@ fetchSongsEminem();
 fetchSongsMetallica();
 
 function rimuoviDuplicati(cover, title) {
-  cover = [];
-  title = [];
+  modal.innerHTML = "";
   cover = cover.filter((item, index) => cover.indexOf(item) === index);
   title = title.filter((item, index) => title.indexOf(item) === index);
-
-  let modal = document.querySelector("#contentList");
   for (let i = 0; i < cover.length; i++) {
     modal.innerHTML += `<div class="d-flex justify-content-between mb-2">
   <div>${title[i]}</div><div><img src="${cover[i]}"></div></div>`;
   }
-
   return modal;
 }
 
