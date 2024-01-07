@@ -81,34 +81,18 @@
             <div class="col-10">
               <div id="eminem" class="">
                 <h2>Eminem</h2>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#albums-modal" onclick=" creaLista()">Albums list</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#albums-modal" onclick="creaListaEminem()">Albums list</button>
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3 gap" id="eminemSection"></div>
-                <div class="modal fade" id="albums-modal" tabindex="-1" aria-labelledby="albums-modalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="albums-modalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body text-dark overflow-auto" id="contentList"></div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-10">
-              <div id="metallica" class="d-none">
+              <div id="metallica" class=" ">
                 <h2>Metallica</h2>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="metallicaSection"></div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#albums-modal" onclick="creaListaMetallica()">Albums list</button>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3 gap" id="metallicaSection"></div>
               </div>
             </div>
           </div>
@@ -116,7 +100,7 @@
             <div class="col-10">
               <div id="queen" class="d-none">
                 <h2>Queen</h2>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="queenSection"></div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3 gap" id="queenSection"></div>
               </div>
             </div>
           </div>
@@ -125,6 +109,23 @@
               <div id="found" class="d-none">
                 <h2>Search results</h2>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="searchSection"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="albums-modal" tabindex="-1" aria-labelledby="albums-modalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="albums-modalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-dark overflow-auto" id="contentList"></div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
               </div>
             </div>
           </div>
