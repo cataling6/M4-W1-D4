@@ -58,7 +58,7 @@ function rimuoviDuplicati(cover, title) {
 
   let modal = document.querySelector("#contentList");
   for (let i = 0; i < cover.length; i++) {
-    modal.innerHTML += `<div class="d-flex justify-content-between gap">
+    modal.innerHTML += `<div class="d-flex justify-content-between mb-2">
   <div>${title[i]}</div><div><img src="${cover[i]}"></div></div>`;
   }
 
