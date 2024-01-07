@@ -104,6 +104,8 @@ fetchSongsEminem();
 fetchSongsMetallica();
 
 function rimuoviDuplicati(cover, title) {
+  cover = [];
+  title = [];
   cover = cover.filter((item, index) => cover.indexOf(item) === index);
   title = title.filter((item, index) => title.indexOf(item) === index);
 
